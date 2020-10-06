@@ -1,0 +1,11 @@
+<h1>Weeb Patrol</h1>
+
+<ul>
+    <% @blogs.each do |blog| %>
+        <li>
+            <%= link_to blog.title, blog_path(blog) %>
+        </li>
+    <% end %>
+</ul>
+
+<p> <%= link_to 'Add a David Post', new_blog_path %> </p>

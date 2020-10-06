@@ -1,0 +1,14 @@
+<h3> <%= @blog.title %> </h3>
+
+<p> <%= @blog.content %> </p>
+
+<br>
+<p> <%= link_to 'Edit this Opinion to Make it Better', edit_blog_path(@blog) %></p>
+
+<br>
+<p><%= link_to 'Delete this Bad Opinion', delete_blog_path(@blog), method: :delete, data: { confirm: 'Yeah, that was a pretty bad opinion right?' } %></p>
+
+<br>
+<p>
+Kira Queen! Dai San no Bakudan BITES ZA DUST to: <%= link_to "the rest of the blogs", blogs_path%>
+</p>
