@@ -1,6 +1,6 @@
 <h3> Edit this David Critique to Make it Better</h3>
 
-<%= form_with url: "/blogs/#{params[:id]}", method: 'patch', local: true do |form| %>
+<%= form_with model: @blog, method: 'patch', local: true do |form| %>
     <%= form.label :title%>
     <%= form.text_field :title%>
 
@@ -10,4 +10,4 @@
 
     <br>
     <%= form.submit :HeavensDoor %>
-    <% end %>
+<% end %>
