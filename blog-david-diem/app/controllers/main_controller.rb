@@ -23,7 +23,7 @@ class MainController < ApplicationController
             redirect_to @blog
         else
             #redirect_to new_blog_path
-            render html: "whoopsies"
+            render html: "nothing personal kid..."
         end
     end
 
@@ -52,7 +52,7 @@ class MainController < ApplicationController
             redirect_to @blog
         else
             #redirect_to blog_path
-            render html: "whoopsie"
+            render html: "nothing personal kid..."
         end
     end
 
